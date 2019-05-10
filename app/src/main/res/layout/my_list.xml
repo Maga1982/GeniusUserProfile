@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="wrap_content"
     android:id="@+id/my_list">
     <ImageView
         android:id="@+id/image"
@@ -17,7 +17,7 @@
         android:layout_toRightOf="@+id/image"
         android:padding="@dimen/medium"
         android:textColor="@color/blueText"
-        android:textSize="@dimen/medium_font" />
+        android:textSize="@dimen/large_font" />
 
     <TextView
         android:id="@+id/last"
@@ -27,5 +27,9 @@
         android:layout_toRightOf="@+id/image"
         android:padding="@dimen/medium"
         android:textColor="@color/blueText"
-        android:textSize="@dimen/medium_font" />
+        android:textSize="@dimen/large_font" />
+    <View
+    android:layout_width="match_parent"
+    android:layout_height="1dp"
+    android:background="@color/grey" />
 </RelativeLayout>

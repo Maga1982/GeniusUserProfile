@@ -9,11 +9,13 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.squareup.picasso.Picasso;
+
 import java.util.ArrayList;
 
 public class UserAdapter extends RecyclerView.Adapter<UserAdapter.MyViewHolder>{
     Context context;
-    ArrayList<Users> arrayList=new ArrayList<Users>();
+    ArrayList<Users> arrayList;
     Users users;
     public UserAdapter(Context context,ArrayList<Users> arrayList) {
         this.context=context;
@@ -33,7 +35,7 @@ public class UserAdapter extends RecyclerView.Adapter<UserAdapter.MyViewHolder>{
         users=arrayList.get(position);
         myViewHolder.textView1.setText(String.valueOf(users.getFirstName()));
         myViewHolder.textView2.setText(String.valueOf(users.getLastName()));
-        myViewHolder.imageView.setImageResource(R.drawable.genius);
+        Picasso.get().load(users.getImageUrl()).into(myViewHolder.imageView);
     }
 
     @Override
