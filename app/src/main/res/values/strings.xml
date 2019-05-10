@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">GeniusUserProfile</string>
+    <string name="view_user">View Users</string>
+    <string name="add_user">Add Users</string>
+</resources>
