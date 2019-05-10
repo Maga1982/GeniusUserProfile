@@ -8,6 +8,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.util.Log;
 import android.view.View;
 
 import java.util.ArrayList;
@@ -22,6 +23,7 @@ public class ViewUserActivity extends AppCompatActivity  implements LoaderManage
         setContentView(R.layout.activity_view_user);
         arrayList=new ArrayList<Users>();
         recyclerView=findViewById(R.id.recycler_view);
+        Log.v("inside","ViewUserActivity");
         getSupportLoaderManager().initLoader(1,null,this).forceLoad();
 
 

@@ -35,6 +35,8 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 Log.v("inside","adduser");
                 //get response from server using post method
+                Intent intent=new Intent(MainActivity.this,AddUserActivity.class);
+                startActivity(intent);
             }
         });
 
